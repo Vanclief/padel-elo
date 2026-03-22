@@ -110,10 +110,11 @@ def play_match(player1, player2, player3, player4, score1, score2):
 
 # Main
 angel = Player("Angel", 1625.0)
-chimes = Player("Chimes", 1631.42)
-franco = Player("Franco", 1365.57)
-joma = Player("Joma", 1330.56)
-omar = Player("Omar", 1351.43)
+chimes = Player("Chimes", 1555.2180947251181)
+franco = Player("Franco", 1441.7719052748819)
+joma = Player("Joma", 1295.4441570972467)
+omar = Player("Omar", 1386.5458429027533)
+fer = Player("Fer", 1350)
 
 roger = Player("Rogelio", 1732.06)
 popovich = Player("Popovich", 1399.07)
@@ -122,13 +123,13 @@ edgar = Player("Edgar", 1163.95)
 
 
 print("----Ranking Inicial-------")
-print_rankings([roger, chimes, omar, joma, franco, angel])
+print_rankings([fer, chimes, omar, joma, franco, angel])
 
-play_match(franco, joma, omar, chimes, 6, 4)
-play_match(franco, joma, omar, chimes, 6, 2)
-play_match(franco, omar, joma, chimes, 6, 0)
-play_match(franco, omar, joma, chimes, 6, 4)
+play_match(franco, fer, joma, chimes, 6, 4)
+play_match(franco, fer, joma, chimes, 2, 6)
+play_match(franco, fer, joma, chimes, 4, 6)
+play_match(franco, fer, joma, chimes, 3, 6)
 
 
 print("----Ranking Actual-------")
-print_rankings([chimes, omar, joma, franco, angel])
+print_rankings([chimes, omar, joma, franco, angel, fer])
